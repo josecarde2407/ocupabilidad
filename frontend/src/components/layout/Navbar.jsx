@@ -1,5 +1,5 @@
 import "../../styles/global.css";
-import FiltersPanel from "../dashboard/FiltersPanel";
+import FiltersPanel from "../Dashboard/FiltersPanel";
 
 export default function Navbar({
     sedes,
