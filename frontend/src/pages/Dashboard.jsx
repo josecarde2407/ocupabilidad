@@ -3,11 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 
-import SummaryCards from "../components/dashboard/SummaryCards";
-import FamilyCards from "../components/dashboard/FamilyCards";
-import OccupancyGauge from "../components/dashboard/OccupancyGauge";
-import OccupancyChart from "../components/dashboard/OccupancyChart";
-import OccupancyTable from "../components/dashboard/OccupancyTable";
+import SummaryCards from "../components/Dashboard/SummaryCards";
+import FamilyCards from "../components/Dashboard/FamilyCards";
+import OccupancyGauge from "../components/Dashboard/OccupancyGauge";
+import OccupancyChart from "../components/Dashboard/OccupancyChart";
+import OccupancyTable from "../components/Dashboard/OccupancyTable";
 
 export default function Dashboard() {
 
