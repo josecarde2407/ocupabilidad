@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL="https://tu-backend.onrender.com/api/ocupabilidad";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 export const api = {
   capacity: `${API_BASE}/capacity`,
