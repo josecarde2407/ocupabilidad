@@ -1,0 +1,33 @@
+/* GLOBAL IMPORTS */
+
+@import "tailwindcss";
+
+/* BASE */
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/base.css";
+@import "./base/scrollbar.css";
+
+/* LAYOUT */
+@import "./layout/dashboard-layout.css";
+@import "./layout/panels.css";
+@import "./layout/sidebar.css";
+@import "./layout/header.css";
+
+
+
+/* COMPONENTS */
+@import "./components/filters.css";
+@import "./components/summary-cards.css";
+@import "./components/gauge.css";
+@import "./components/family-cards.css";
+@import "./components/charts.css";
+@import "./components/tables.css";
+@import "./components/status.css";
+@import "./components/hero.css";
+@import "./components/settings.css";
+
+
+
+/* RESPONSIVE */
+@import "./responsive/responsive.css";

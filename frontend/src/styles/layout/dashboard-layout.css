@@ -1,0 +1,97 @@
+/*src/styles/layout/dashboard-layout.css*/
+/* =========================================================
+   APP SHELL
+========================================================= */
+
+.app-shell {
+
+    min-height: 100vh;
+
+    background: var(--bg);
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.app-main {
+
+    margin-left: 280px;
+
+    padding-top: 84px;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    transition: margin-left 0.3s ease;
+}
+
+.app-main.sidebar-collapsed {
+    margin-left: 100px;
+}
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.dashboard-shell {
+
+    width: 100%;
+
+    padding: 24px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.dashboard-main {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+    padding: 16px 24px 24px;
+
+    margin: 0;
+
+    min-height: 100vh;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.analytics-grid {
+
+    display: grid;
+
+    grid-template-columns: 420px 1fr;
+
+    gap: 24px;
+}
+
+@media (max-width: 1200px) {
+
+    .analytics-grid {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   PANELS
+========================================================= */
+
+.panel-card {
+    overflow: visible;
+}
+
+.panel-card-inner {
+    overflow: hidden;
+    border-radius: 16px;
+}

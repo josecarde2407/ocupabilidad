@@ -1,0 +1,324 @@
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+/* =========================================
+   LARGE SCREENS
+========================================= */
+
+@media (max-width: 1400px) {
+
+    .analytics-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .family-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================
+   LAPTOP
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .dashboard-shell {
+
+        padding: 20px;
+    }
+
+    .dashboard-main {
+
+        padding: 0;
+    }
+
+    .hero-content {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 28px;
+    }
+
+    .hero-right {
+
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        margin-left: 0;
+    }
+
+    .filters-panel {
+
+        flex-wrap: wrap;
+    }
+
+    .analytics-grid {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .summary-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .family-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .hero-banner {
+
+        padding: 24px;
+    }
+
+    .hero-header h1 {
+
+        font-size: 38px;
+    }
+
+    .hero-right {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+    .filters-panel {
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .compact-filters {
+
+        width: 100%;
+    }
+
+    .compact-filter-button {
+
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+    .hero-actions {
+
+        width: 100%;
+    }
+
+    .hero-button,
+    .hero-clear-button {
+
+        flex: 1;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .dashboard-shell {
+
+        padding: 16px;
+    }
+
+    .dashboard-main {
+
+        gap: 18px;
+    }
+
+    .panel-card,
+    .metric-card,
+    .gauge-card,
+    .table-wrapper {
+
+        padding: 20px;
+    }
+
+    /* HERO */
+
+    .hero-sticky {
+
+        top: 74px;
+    }
+
+    .hero-banner {
+
+        padding: 22px;
+
+        border-radius: 24px;
+    }
+
+    .hero-header h1 {
+
+        font-size: 30px;
+
+        line-height: 1.1;
+    }
+
+    .hero-header span {
+
+        font-size: 14px;
+    }
+
+    .hero-right {
+
+        gap: 14px;
+    }
+
+    /* ACTIONS */
+
+    .hero-actions {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-button,
+    .hero-clear-button {
+
+        width: 100%;
+    }
+
+    /* PANELS */
+
+    .panel-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+        margin-bottom: 20px;
+    }
+
+    .panel-header h2 {
+
+        font-size: 20px;
+    }
+
+    /* TABLE */
+
+    .table-container {
+
+        border-radius: 14px;
+    }
+
+    table {
+
+        min-width: 700px;
+    }
+
+    th,
+    td {
+
+        padding: 14px;
+    }
+
+    /* CHARTS */
+
+    .chart-modern {
+
+        flex-direction: column;
+    }
+
+    .chart-y-axis {
+
+        display: none;
+    }
+
+    /* GAUGE */
+
+    .gauge-wrapper {
+
+        width: 240px;
+
+        height: 140px;
+    }
+
+    .gauge-bg,
+    .gauge-fill {
+
+        width: 240px;
+
+        height: 240px;
+    }
+
+    .gauge-center h2 {
+
+        font-size: 36px;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+
+        padding: 0 16px;
+    }
+
+    .navbar-title {
+
+        font-size: 16px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .hero-header h1 {
+
+        font-size: 26px;
+    }
+
+    .metric-value {
+
+        font-size: 32px;
+    }
+
+    .compact-filters-menu {
+
+        width: 100%;
+
+        left: 0;
+
+        right: auto;
+
+        padding: 18px;
+    }
+
+    .compact-options {
+
+        gap: 8px;
+    }
+
+    .compact-chip {
+
+        width: 100%;
+    }
+}

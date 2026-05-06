@@ -1,0 +1,274 @@
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.table-wrapper {
+
+    padding: 28px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-sm);
+}
+
+/* =========================================================
+   TABLE CONTAINER
+========================================================= */
+
+.table-container {
+
+    overflow-x: auto;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface-2);
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+th {
+
+    background: #e2e8f0;
+
+    color: #334155;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .8px;
+
+    padding: 18px 20px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #cbd5e1;
+
+    white-space: nowrap;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+td {
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    font-size: 14px;
+
+    color: var(--text);
+
+    background: white;
+}
+
+/* zebra rows */
+
+tbody tr:nth-child(even) td {
+
+    background: #f8fafc;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+tbody tr {
+
+    transition: background .2s ease;
+}
+
+tbody tr:hover td {
+
+    background: #eff6ff;
+}
+
+/* =========================================================
+   LAST ROW
+========================================================= */
+
+tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.table-container::-webkit-scrollbar {
+
+    height: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+
+    background: #e2e8f0;
+
+    border-radius: 999px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+
+    background: #94a3b8;
+
+    border-radius: 999px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+
+    background: #64748b;
+}
+/* =========================
+   CAPACITY MATRIX TABLE
+   ========================= */
+
+.capacity-matrix {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    margin-top: 12px;
+}
+
+/* TABLE */
+.capacity-matrix table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* HEADER */
+.capacity-matrix thead {
+    background: #111827;
+    color: #ffffff;
+}
+
+.capacity-matrix th {
+    text-align: left;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+/* ROWS */
+.capacity-matrix td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.capacity-matrix tbody tr:hover {
+    background: #f9fafb;
+    transition: 0.2s ease;
+}
+
+/* INPUT */
+.capacity-matrix input {
+    width: 90px;
+    padding: 6px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.capacity-matrix input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+/* BUTTON */
+.capacity-matrix button {
+    margin-top: 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.capacity-matrix button:hover {
+    background: #1d4ed8;
+}
+
+.capacity-matrix button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* OPTIONAL: modified row highlight */
+.capacity-matrix .changed-row {
+    background: #fff7ed;
+}
+.preview-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.preview-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.preview-box th,
+.preview-box td {
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.pagination button {
+    padding: 6px 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}

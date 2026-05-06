@@ -1,0 +1,128 @@
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.status-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 110px;
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        transform .2s ease,
+        background .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.status-badge:hover {
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   OK
+========================================= */
+
+.status-badge.ok {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(16,185,129,.18),
+            rgba(6,95,70,.18)
+        );
+
+    border-color:
+        rgba(16,185,129,.28);
+
+    color: #6ee7b7;
+
+    box-shadow:
+        0 0 18px rgba(16,185,129,.12);
+}
+
+/* =========================================
+   WARNING
+========================================= */
+
+.status-badge.warning {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(245,158,11,.18),
+            rgba(146,64,14,.18)
+        );
+
+    border-color:
+        rgba(245,158,11,.28);
+
+    color: #fcd34d;
+
+    box-shadow:
+        0 0 18px rgba(245,158,11,.12);
+}
+
+/* =========================================
+   CRITICAL
+========================================= */
+
+.status-badge.critical {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(239,68,68,.18),
+            rgba(127,29,29,.18)
+        );
+
+    border-color:
+        rgba(239,68,68,.28);
+
+    color: #fca5a5;
+
+    box-shadow:
+        0 0 18px rgba(239,68,68,.12);
+}
+
+/* =========================================
+   NO CONFIG
+========================================= */
+
+.status-badge.no-config {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(148,163,184,.12),
+            rgba(51,65,85,.18)
+        );
+
+    border-color:
+        rgba(148,163,184,.18);
+
+    color: #cbd5e1;
+
+    box-shadow:
+        0 0 18px rgba(148,163,184,.08);
+}

@@ -1,0 +1,37 @@
+services:
+
+  backend:
+    build: ./backend
+
+    container_name: ocupabilidad_backend
+
+    ports:
+      - "3000:3000"
+
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+    restart: unless-stopped
+
+    command: npm run dev
+
+ 
+  frontend:
+    build: ./frontend
+
+    container_name: ocupabilidad_frontend
+
+    ports:
+      - "5173:5173"
+
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+    restart: unless-stopped
+
+    command: npm run dev -- --host
+
+    depends_on:
+      - backend

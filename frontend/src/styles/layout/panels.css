@@ -1,0 +1,145 @@
+/* =========================================================
+   SHARED PANELS
+========================================================= */
+
+.panel-card,
+.metric-card,
+.gauge-card,
+.filters-panel,
+.table-wrapper {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+}
+
+/* =========================================
+   TOP ACCENT
+========================================= */
+
+.panel-card::before,
+.metric-card::before,
+.gauge-card::before,
+.filters-panel::before,
+.table-wrapper::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--primary-light)
+    );
+
+    opacity: .9;
+}
+
+/* =========================================
+   HOVER
+========================================= */
+
+.panel-card:hover,
+.metric-card:hover,
+.gauge-card:hover,
+.filters-panel:hover,
+.table-wrapper:hover {
+
+    border-color: rgba(37,99,235,.18);
+
+    box-shadow: var(--shadow-md);
+
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   PANEL CARD
+========================================================= */
+
+.panel-card {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+    margin-bottom: 24px;
+}
+
+/* =========================================================
+   PANEL HEADER (CENTRADO)
+========================================================= */
+
+.panel-header {
+
+    display: flex;
+
+    justify-content: center;   /* 🔥 clave */
+    align-items: center;
+
+    text-align: center;        /* 🔥 centra texto interno */
+
+    gap: 16px;
+
+    margin-bottom: 28px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid var(--border);
+
+    flex-direction: column;    /* 🔥 apila h2 + p */
+}
+
+.panel-header h2 {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    color: var(--text);
+
+    margin: 0;
+}
+
+.panel-header p {
+
+    margin-top: 6px;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+/* =========================================================
+   INNER CONTENT SPACING
+========================================================= */
+
+.panel-card > * {
+
+    position: relative;
+
+    z-index: 2;
+}

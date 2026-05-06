@@ -1,0 +1,133 @@
+/* =========================================================
+   FILTERS PANEL
+========================================================= */
+
+.filters-panel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   MULTISELECT NAVBAR CLEAN (PROFESSIONAL FIX)
+========================================================= */
+
+.custom-multiselect {
+    min-width: 160px;
+    max-width: 200px;
+    height: 40px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 13px;
+
+    transition: all .2s ease;
+
+    overflow: hidden;
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+/* HOVER */
+.custom-multiselect:hover {
+    border-color: #2563eb;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* FOCUS STATE (PrimeReact correcto) */
+.custom-multiselect.p-focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, .25);
+}
+
+/* LABEL PRINCIPAL (texto seleccionado o placeholder) */
+.custom-multiselect .p-multiselect-label {
+    color: #000000;
+    font-weight: 500;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    padding: 0 6px;
+}
+
+/* PLACEHOLDER (estado vacío) */
+.custom-multiselect.p-multiselect-empty .p-multiselect-label {
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 400;
+}
+
+/* ICONO DERECHA */
+.custom-multiselect .p-multiselect-trigger {
+    color: #94a3b8;
+    width: 2.5rem;
+}
+
+/* CONTENEDOR INTERNO */
+.custom-multiselect .p-multiselect-label-container {
+    flex: 1;
+    min-width: 0;
+    /* 🔥 clave para evitar expansión horizontal */
+    overflow: hidden;
+}
+
+/* =========================================================
+   DROPDOWN PANEL
+========================================================= */
+
+.custom-panel {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+
+/* ITEMS */
+.custom-panel .p-multiselect-item {
+    padding: 12px 14px;
+    font-size: 13px;
+
+    transition: background .15s ease;
+}
+
+/* HOVER ITEM */
+.custom-panel .p-multiselect-item:not(.p-highlight):hover {
+    background: #eff6ff;
+}
+
+/* SELECTED ITEM */
+.custom-panel .p-multiselect-item.p-highlight {
+    background: #2563eb;
+    color: white;
+}
+
+/* CHECKBOX */
+.custom-panel .p-checkbox {
+    margin-right: 8px;
+}
+
+/* =========================================================
+   FIX IMPORTANTE: EVITA EXPANSIÓN DEL TEXTO
+========================================================= */
+
+.custom-multiselect .p-multiselect-label {
+    display: block;
+    width: 100%;
+}
+
+/* evita que chips o texto rompan el layout */
+.custom-multiselect .p-multiselect-token {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

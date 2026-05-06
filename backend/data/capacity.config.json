@@ -1,0 +1,62 @@
+[
+  {
+    "sede": "Descartes",
+    "familia": "Materia Prima",
+    "capacity": 850
+  },
+  {
+    "sede": "Descartes",
+    "familia": "Envases Y Empaques",
+    "capacity": 347
+  },
+  {
+    "sede": "Descartes",
+    "familia": "Producto Terminado",
+    "capacity": 50
+  },
+  {
+    "sede": "Lurin",
+    "familia": "Materia Prima",
+    "capacity": 1582
+  },
+  {
+    "sede": "Lurin",
+    "familia": "Envases Y Empaques",
+    "capacity": 1066
+  },
+  {
+    "sede": "Lurin",
+    "familia": "Producto Terminado",
+    "capacity": 3672
+  },
+  {
+    "sede": "BACKUS",
+    "familia": "Materia Prima",
+    "capacity": 254
+  },
+  {
+    "sede": "BACKUS",
+    "familia": "Envases Y Empaques",
+    "capacity": 1230
+  },
+  {
+    "sede": "BACKUS",
+    "familia": "Producto Terminado",
+    "capacity": 1827
+  },
+  {
+    "sede": "PLASTICOS",
+    "familia": "Materia Prima",
+    "capacity": 40
+  },
+  {
+    "sede": "PLASTICOS",
+    "familia": "Envases Y Empaques",
+    "capacity": 262
+  },
+  {
+    "sede": "PLASTICOS",
+    "familia": "Producto Terminado",
+    "capacity": 849
+  }
+]

@@ -1,0 +1,426 @@
+/* =========================================================
+   GAUGE CARD
+========================================================= */
+.gauge-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 32px;
+
+    min-height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fbff 100%
+    );
+
+    border: 1px solid #dbe4ee;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================================
+   BACKGROUND EFFECT
+========================================================= */
+
+.gauge-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            rgba(37,99,235,.10),
+            transparent 70%
+        );
+
+    top: -120px;
+    right: -120px;
+
+    pointer-events: none;
+}
+
+.gauge-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.55),
+            transparent 35%
+        );
+
+    pointer-events: none;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.gauge-header {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-bottom: 32px;
+}
+
+.gauge-label {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #64748b;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+.gauge-title {
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    line-height: 1.1;
+
+    color: #0f172a;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.gauge-status {
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .8px;
+
+    border: 1px solid transparent;
+}
+
+.gauge-status.healthy {
+
+    background: rgba(16,185,129,.12);
+
+    color: #047857;
+
+    border-color: rgba(16,185,129,.18);
+}
+
+.gauge-status.warning {
+
+    background: rgba(245,158,11,.12);
+
+    color: #b45309;
+
+    border-color: rgba(245,158,11,.18);
+}
+
+.gauge-status.critical {
+
+    background: rgba(239,68,68,.10);
+
+    color: #b91c1c;
+
+    border-color: rgba(239,68,68,.15);
+}
+
+/* =========================================================
+   GAUGE WRAPPER
+========================================================= */
+
+.gauge-wrapper {
+
+    position: relative;
+
+    width: 340px;
+
+    height: 190px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   GAUGE TRACK + PROGRESS
+========================================================= */
+
+.gauge-track,
+.gauge-progress {
+
+    position: absolute;
+
+    width: 340px;
+    height: 340px;
+
+    border-radius: 50%;
+
+    clip-path: inset(0 0 50% 0);
+}
+
+/* =========================================================
+   TRACK
+========================================================= */
+
+.gauge-track {
+
+    background: #e2e8f0;
+}
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.gauge-progress {
+
+    color: #2563eb;
+
+    transition: all .4s ease;
+}
+
+/* STATUS */
+
+.gauge-progress.healthy {
+
+    color: #10b981;
+}
+
+.gauge-progress.warning {
+
+    color: #f59e0b;
+}
+
+.gauge-progress.critical {
+
+    color: #ef4444;
+}
+
+/* =========================================================
+   INNER WHITE AREA
+========================================================= */
+
+.gauge-inner {
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    left: 50%;
+
+    top: 40px;
+
+    transform: translateX(-50%);
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   CENTER
+========================================================= */
+
+.gauge-center {
+
+    position: absolute;
+
+    width: 100%;
+
+    bottom: 20px;
+
+    left: 0;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+.gauge-center h2 {
+
+    font-size: 64px;
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    color: #0f172a;
+
+    letter-spacing: -2px;
+}
+
+.gauge-center span {
+
+    display: block;
+
+    margin-top: 10px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.gauge-footer {
+
+    margin-top: 34px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 32px;
+
+    padding-top: 24px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+.gauge-metric {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.gauge-metric span {
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+}
+
+.gauge-metric strong {
+
+    margin-top: 8px;
+
+    font-size: 28px;
+
+    font-weight: 900;
+
+    color: #0f172a;
+}
+
+.gauge-divider {
+
+    width: 1px;
+
+    height: 46px;
+
+    background: #dbe4ee;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.gauge-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .gauge-card {
+
+        padding: 24px;
+
+        min-height: auto;
+    }
+
+    .gauge-wrapper {
+
+        width: 280px;
+
+        height: 160px;
+    }
+
+    .gauge-bg,
+    .gauge-fill {
+
+        width: 280px;
+        height: 280px;
+    }
+
+    .gauge-center h2 {
+
+        font-size: 48px;
+    }
+
+    .gauge-footer {
+
+        gap: 20px;
+    }
+}

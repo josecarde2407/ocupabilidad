@@ -1,0 +1,221 @@
+.family-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    gap: 20px;
+
+    align-items: start;
+
+    max-width: 100%;
+}
+
+.family-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #dbe4ee;
+
+    box-shadow:
+        0 8px 24px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        all .2s ease;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    height: auto;
+
+    min-height: 220px;
+}
+
+.family-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+
+.family-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(180deg,
+            rgba(255, 255, 255, .10),
+            transparent);
+
+    opacity: .4;
+
+    z-index: 1;
+}
+
+.family-name {
+
+    position: relative;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    opacity: .9;
+
+    font-weight: 800;
+
+    color: #1f2937;
+
+    z-index: 2;
+}
+
+.family-value {
+
+    position: relative;
+
+    margin-top: 20px;
+
+    font-size: 42px;
+
+    font-weight: 900;
+
+    color: #1f2937;
+
+    z-index: 2;
+}
+
+.family-cost {
+
+    position: relative;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    opacity: .9;
+
+    color: #6b7280;
+
+    z-index: 2;
+}
+
+/* =========================================================
+   COLOR VARIANTS
+========================================================= */
+
+.family-purple {
+
+    background:
+        linear-gradient(135deg,
+            #7c3aed,
+            #4c1d95);
+}
+
+.family-purple .family-name,
+.family-purple .family-value {
+    color: #ffffff;
+}
+
+.family-purple .family-cost {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.family-blue {
+
+    background:
+        linear-gradient(135deg,
+            #2563eb,
+            #1e3a8a);
+}
+
+.family-blue .family-name,
+.family-blue .family-value {
+    color: #ffffff;
+}
+
+.family-blue .family-cost {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.family-green {
+
+    background:
+        linear-gradient(135deg,
+            #059669,
+            #064e3b);
+}
+
+.family-green .family-name,
+.family-green .family-value {
+    color: #ffffff;
+}
+
+.family-green .family-cost {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.family-orange {
+
+    background:
+        linear-gradient(135deg,
+            #ea580c,
+            #7c2d12);
+}
+
+.family-orange .family-name,
+.family-orange .family-value {
+    color: #ffffff;
+}
+
+.family-orange .family-cost {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.family-red {
+
+    background:
+        linear-gradient(135deg,
+            #dc2626,
+            #7f1d1d);
+}
+
+.family-red .family-name,
+.family-red .family-value {
+    color: #ffffff;
+}
+
+.family-red .family-cost {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.family-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    margin-top: auto;
+
+    padding-top: 16px;
+
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
+}

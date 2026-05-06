@@ -1,0 +1,318 @@
+/* =========================================
+   CONTENT
+========================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+/* =========================================
+   LEFT
+========================================= */
+
+.hero-header {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+.hero-header h1 {
+
+    font-size: 52px;
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    color: #0f172a;
+
+    margin: 0;
+}
+
+.hero-header span {
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+.hero-subtitle {
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: #2563eb;
+
+    font-weight: 800;
+}
+
+/* =========================================
+   RIGHT
+========================================= */
+
+.hero-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-left: auto;
+}
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.filters-panel {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.filter-dropdown {
+
+    position: relative;
+}
+
+.filter-trigger {
+
+    width: 260px;
+
+    height: 60px;
+
+    padding: 0 18px;
+
+    border-radius: 18px;
+
+    border:
+        1px solid #dbe4ee;
+
+    background:
+        #ffffff;
+
+    color: #0f172a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.06);
+
+    transition:
+        all .25s ease;
+}
+
+.filter-trigger:hover {
+
+    border-color: #94a3b8;
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.10);
+}
+
+.filter-trigger > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.filter-trigger span {
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    color: #64748b;
+}
+
+.filter-trigger strong {
+
+    margin-top: 4px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #0f172a;
+}
+
+.filter-menu {
+
+    position: absolute;
+
+    top: 70px;
+
+    left: 0;
+
+    width: 100%;
+
+    max-height: 300px;
+
+    overflow-y: auto;
+
+    padding: 12px;
+
+    border-radius: 18px;
+
+    background:
+        #ffffff;
+
+    border:
+        1px solid #dbe4ee;
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.12);
+
+    z-index: 100;
+}
+
+.filter-option {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    color: #1e293b;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease;
+}
+
+.filter-option:hover {
+
+    background:
+        #f1f5f9;
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.hero-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.hero-button,
+.hero-clear-button {
+
+    height: 60px;
+
+    padding: 0 24px;
+
+    border-radius: 18px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        all .25s ease;
+}
+
+/* PRIMARY BUTTON */
+
+.hero-button {
+
+    color: white;
+
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    box-shadow:
+        0 10px 24px rgba(37, 99, 235, 0.25);
+}
+
+.hero-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(37, 99, 235, 0.35);
+}
+
+/* SECONDARY BUTTON */
+
+.hero-clear-button {
+
+    color: #334155;
+
+    border:
+        1px solid #dbe4ee;
+
+    background:
+        #ffffff;
+}
+
+.hero-clear-button:hover {
+
+    background:
+        #f8fafc;
+}
+
+.hero-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-left: auto;
+}
+.hero-banner {
+
+    overflow: visible;
+}

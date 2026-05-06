@@ -1,0 +1,150 @@
+/* =========================================================
+   HEADER / NAVBAR
+========================================================= */
+
+.navbar {
+    height: 84px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+
+    background: linear-gradient(180deg,
+            rgba(8, 17, 32, .96),
+            rgba(8, 17, 32, .88));
+
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.navbar-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.navbar-brand {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.navbar-title {
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+    letter-spacing: -.6px;
+
+    line-height: 1;
+
+    color: white;
+}
+
+.navbar-subtitle {
+
+    margin-top: 6px;
+
+    font-size: 13px;
+
+    color: var(--text-muted);
+
+    letter-spacing: .3px;
+}
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.navbar-action {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-action:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.navbar-action:active {
+    transform: scale(0.95);
+}
+
+/* =========================================================
+   USER AVATAR
+========================================================= */
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        height: auto;
+
+        padding: 18px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .navbar-right {
+
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+    .navbar-title {
+
+        font-size: 20px;
+    }
+
+    .navbar-subtitle {
+
+        font-size: 12px;
+    }
+}
